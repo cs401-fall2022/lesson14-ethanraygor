@@ -1,1 +1,1 @@
-# github-classroom-blank-starter
+# TypeScript from JavaScript
