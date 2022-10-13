@@ -2,7 +2,10 @@
     "compilerOptions": {
       "target": "es5",
       "module": "commonjs",
+      "strict": true,
       "sourceMap": true,
-      "outDir": "js"
+      "outDir": "js",
+      "moduleResolution": "node",
+      "strictNullChecks": false
     }
   }
