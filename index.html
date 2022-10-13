@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>TypeScript From JavaScript</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -13,6 +15,11 @@
     </p>
     <h2>Fundamentals</h2>
     <h2>In the Browser</h2>
+    <h3 id="hello" onclick="helloWorld()">Click Me!</h3>
+    <script type="module">
+        import {helloWorld} from '/build/app.js'
+        window.helloWorld = helloWorld;
+    </script>
     <h2>Advanced TypeScript</h2>
 </body>
 </html>
