@@ -1,3 +1,6 @@
+// event listener for the DOMContentLoaded event
+window.addEventListener("DOMContentLoaded", domLoaded);
+
 /**
  * returns hello world string
  * @returns the String "Hello World!"
@@ -20,8 +23,11 @@
     }
 }
 
-let helloClick = document.getElementById("hello");
+function domLoaded(){
+    let helloClick = document.getElementById("hello");
 
-helloClick.addEventListener("click", function(){
-    helloWorld();
-});
+    helloClick.addEventListener("click", function(){
+        helloWorld();
+    });
+}
+
