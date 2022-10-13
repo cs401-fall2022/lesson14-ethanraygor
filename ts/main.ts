@@ -31,3 +31,4 @@ function domLoaded(){
     });
 }
 
+export {hello}
