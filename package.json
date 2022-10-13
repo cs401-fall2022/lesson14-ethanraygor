@@ -9,6 +9,7 @@
   },
   "author": "Ethan Raygor",
   "scripts": {
+    "compile": "tsc",
     "lint": "eslint js/**",
     "lint:fix": "eslint js/** --fix",
     "lint:html": "htmlhint"
