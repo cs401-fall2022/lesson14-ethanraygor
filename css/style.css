@@ -1,7 +1,29 @@
 body {
-    background-color: lightblue;
+    background-color: white;
 }
 #title {
     text-align: center;
     font-weight: bolder;
+}
+h2{
+    text-align: center;
+}
+div.image{
+    text-align: center;
+}
+#footer {
+    align-content: center;
+    display: flex
+}
+#footer > #left{
+    width: 30%;
+}
+#footer > center{
+    width: 50%;
+}
+#footer > #right{
+    width: 20%;
+}
+#footer > span > a{
+    text-align: right;
 }
