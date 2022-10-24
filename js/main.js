@@ -12,7 +12,7 @@ function hello() {
 }
 exports.hello = hello;
 /**
- * turns clicck me to hello world and vice versa
+ * turns click me to hello world and vice versa
  */
 function helloWorld() {
     if (document != null) {

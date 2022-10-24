@@ -5,7 +5,6 @@
     <title>TypeScript From JavaScript</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.19.1.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -47,7 +46,35 @@
     </p>
     <div class="image"><img src="./img/Example_4.jpg" alt="code example"></div>
     <h2>In the Browser</h2>
-    <h3 id="hello">Click Me!</h3>
+    <p>
+        To demonstrate running Typescript in the browser, I will use a simple script that changes some text in my webpage to different text when clicked.
+        The code for that function can be found below.
+    </p>
+    <div class="image"><img src="./img/helloWorld.jpg" alt="helloWorld function"></div>
+    <p>
+        After writing the function I want to be included on my webpage, I need to add an event listener to my window for when the DOM (Document Object Module) is loaded.
+        This only takes one line of code.
+    </p>
+    <div class="image"><img src="./img/window_listener.jpg" alt="window listener"></div>
+    <p>
+        This listener is activated when the DOM loads, which is basically when the webpage loads for the first time in a window.
+        I pass the domLoaded function to this listener where I can specify what I want to happen when the page loads.
+    </p>
+    <div class="image"><img src="./img/dom_loaded.jpg" alt="dom loaded"></div>
+    <p>
+        I added an event listener to any element with the id "hello" that will run my helloWorld function when the element is clicked.
+        You can see all of that code working with my example below.
+        Try it for yourself!
+    </p>
+    <div class="helloFunction"><h3 id="hello">Click Me!</h3></div>
+    <p>
+        There are a few more steps you have to complete to actually get your code live.
+        First, we have to convert our typescript to javascript.
+        I do this by running the command `npm run compile`.
+        After this we have to make sure our newly generated javascript file is included in our html file.
+        I did this with the code below.
+    </p>
+    <div class="image"><img src="./img/html.jpg" alt="html"></div>
     <div id="footer">
         <span id="left">Ethan Raygor</span>
         <span id="center">Last Updated: 10/23/2022</span>
@@ -55,10 +82,6 @@
     </div>
     <div>
         <div id="helloScript"></div>
-        <!--<div id="quinit"></div>"
-        <div id="quint-fixture"></div>
-        <script src="https://code.jquery.com/qunit/qunit-2.19.1.js"></script>
-        <script src="./js/test.js"></script>-->
         <script>var exports = {}; </script>
         <script src="./js/main.js"></script>
     </div>

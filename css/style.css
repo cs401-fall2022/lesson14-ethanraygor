@@ -1,29 +1,37 @@
 body {
     background-color: white;
 }
+h2{
+    text-align: center;
+}
 #title {
     text-align: center;
     font-weight: bolder;
 }
-h2{
-    text-align: center;
-}
 div.image{
     text-align: center;
 }
+div.helloFunction{
+    display: flex;
+    justify-content: center;
+}
+#hello{
+    text-align: center;
+    width: 150px;
+    color: lightyellow;
+    background-color: black;
+}
 #footer {
-    align-content: center;
-    display: flex
+    display: flex;
 }
 #footer > #left{
     width: 30%;
 }
-#footer > center{
-    width: 50%;
+#footer > #center{
+    width: 40%;
+    text-align: center;
 }
 #footer > #right{
-    width: 20%;
-}
-#footer > span > a{
+    width: 30%;
     text-align: right;
 }
